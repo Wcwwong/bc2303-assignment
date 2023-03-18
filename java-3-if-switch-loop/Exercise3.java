@@ -35,10 +35,10 @@ public class Exercise3 {
         // Code here
       case 2:
         MonthOfName = "February";
-        number_Of_DaysInMonth = 28;
-        do{
-          number_Of_DaysInMonth = 29; 
-        } while(year % 100 !=0 || year %400 == 0);
+        if ((year % 100 !=0 && year % 4 ==0) || year % 400 == 0){
+          number_Of_DaysInMonth = 29;
+        } else {
+          number_Of_DaysInMonth = 28;
         }
         break;
       case 3:
